@@ -3,19 +3,15 @@
     "version": "0.1",
     "description": "An extension to lessen all the busy work",
     "permissions": ["storage", "tabs"],
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-      },
+    
+    "action": {
+      "default_popup": "/html/popups/templateeditor.html"
+    },
     "content_scripts": [
-      // {
-      //   "matches": ["https://alder.pandolink.com/customer/search"],
-      //   "js": []
-      // },
       {
         "matches": ["https://alder.pandolink.com/customer/master/*"],
         "js": ["notes_templates.js"]
       }
     ],
-    "manifest_version": 2
+    "manifest_version": 3
   }

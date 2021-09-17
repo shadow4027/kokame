@@ -10,9 +10,6 @@
 // ==/UserScript==
 
 (function() {
-    'use strict';
-    //for debug
-    // GM_setValue("Five9PhoneNumber", "(555) 555-5555");
     //Consts
     const NOTE_TEMPLATES = [
         {"name": "CSR", "value": "CSR_Normal", "template": ["Name: ", "Verified: ", "Phone: %phonenumber%", "Issue: ", "Resolution: "]},
@@ -21,9 +18,7 @@
 
     ];
     var five9_phonenumber = "";
-
-    // GM_addValueChangeListener("PHONENUMBER", function(name, old_value, new_value, remote) {five9_phonenumber = new_value})
-
+    chrome.localStorage
     window.NOTE_TEMPLATES = NOTE_TEMPLATES;
     // functions
     //Sets attributes of a passed element
