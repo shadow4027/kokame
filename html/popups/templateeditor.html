@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
   </head>
   <body>
-    <textarea name="What is happending" id="note_template" cols="30" rows="10"></textarea>
-    <button id="changeColor">hello world</button>
+    <div class="controls">
+      <button id="back">Back</button>
+    </div>
+    <div>
+      <select name="templates" id="template_selection" >
+        <option value="$create">Create New</option>
+      </select>
+      <input type="text" size="30" maxlength="30" placeholder="Template Name" id="template_name" >
+      <textarea name="What is happending" id="template_textarea" cols="30" rows="10"></textarea>
+    </div>
+    <div class="controls">
+      <button id="save_button">Save</button>
+      <button id="load_button">Load</button>
+      <button id="delete_button">Delete</button>
+    </div>
   </body>
 </html>

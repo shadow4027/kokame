@@ -1,0 +1,33 @@
+body {
+    display: block;
+    background-color: #A7C4BC;
+}
+
+div.controls {
+    display: flex;
+    justify-content: center;
+}
+div button {
+    background-color: #DFEEEA;
+    border: #2F5D62;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+}
+
+div button:hover {
+    background-color: #2F5D62;
+    color: white;
+}
+
+div button:first-child {
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding-left: 2em;
+}
+
+div button:last-child {
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding-right: 2em;
+}
+
