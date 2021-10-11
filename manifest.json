@@ -5,7 +5,7 @@
     "permissions": ["storage", "tabs"],
     
     "action": {
-      "default_popup": "/html/popups/templateeditor.html"
+      "default_popup": "/html/popups/index.html"
     },
     "content_scripts": [
       {
